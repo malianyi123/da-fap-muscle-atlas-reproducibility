@@ -1,0 +1,5 @@
+dataset_id,species,cells_before_qc,cells_after_qc,genes,median_genes,median_counts,median_pct_mito,threshold_min_genes,threshold_min_counts,threshold_max_pct_mito
+CELLxGENE_E-MTAB-13874_human_ageing,Homo sapiens,40932,40932,32375,1472.0,2344.42578125,1.3830158710479736,200,300,25
+GSE167186_snRNA,Homo sapiens,134486,55682,33538,818.0,1517.0,0.48949337005615234,200,300,25
+GSE143704,Homo sapiens,22058,22030,21703,1510.0,3838.0,7.62092231960097,200,300,25
+GSE130646,Homo sapiens,2876,2876,15406,579.0,1992.0,2.2450309761605363,200,300,25

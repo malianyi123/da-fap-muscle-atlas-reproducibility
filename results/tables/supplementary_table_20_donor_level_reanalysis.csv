@@ -1,0 +1,39 @@
+comparison,donor,da_median,non_median,n_da,n_non,record_type,difference_da_minus_non,n_units,positive_units,wilcoxon_p,interpretation
+da_fap_score,summary,,,,,summary,0.23514700596913457,18,13,0.0065765380859375,Wilcoxon signed-rank test across donor/sample-level paired medians.
+pseudotime,summary,,,,,summary,-0.04525602236390115,18,6,0.1083831787109375,Wilcoxon signed-rank test across donor/sample-level paired medians.
+pseudotime,339C,0.2226332724094391,0.2021469175815582,58,1329,donor_level_pair,0.020486354827880887,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+pseudotime,343B,0.195796862244606,0.2773240357637405,15,1402,donor_level_pair,-0.0815271735191345,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+pseudotime,362C,0.2004777789115905,0.2918497323989868,197,4263,donor_level_pair,-0.09137195348739632,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+pseudotime,367C,0.1977816075086593,0.2513519823551178,34,834,donor_level_pair,-0.05357037484645849,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+pseudotime,411C,0.2142159640789032,0.2608192861080169,69,915,donor_level_pair,-0.046603322029113714,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+pseudotime,464C,0.2477730140089988,0.1900108009576797,138,582,donor_level_pair,0.057762213051319095,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+pseudotime,470BR,0.2098650485277176,0.5950094163417816,51,2460,donor_level_pair,-0.385144367814064,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+pseudotime,582C,0.3978650569915771,0.2135629057884216,1076,58,donor_level_pair,0.1843021512031555,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+pseudotime,583B,0.2539449483156204,0.7466051578521729,18,3629,donor_level_pair,-0.49266020953655243,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+pseudotime,591C,0.244279645383358,0.3283524215221405,74,1238,donor_level_pair,-0.0840727761387825,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+pseudotime,640C,0.2649349272251129,0.2781198024749756,19,422,donor_level_pair,-0.013184875249862671,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+pseudotime,GSE143704,0.2984307557344436,0.1007654257118702,3790,6006,donor_level_pair,0.19766533002257342,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+pseudotime,GSM3746212_Muscle_1,0.1299938932061195,0.1915545240044593,42,70,donor_level_pair,-0.06156063079833979,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+pseudotime,GSM3746213_Muscle_2,0.1347467824816703,0.1786555051803589,66,217,donor_level_pair,-0.04390872269868859,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+pseudotime,GSM3746214_Muscle_3,0.1230739392340183,0.122082807123661,36,22,donor_level_pair,0.0009911321103572984,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+pseudotime,GSM3746215_Muscle_4,0.1237478144466877,0.186166763305664,58,46,donor_level_pair,-0.06241894885897631,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+pseudotime,GSM5098751_HM21_filtered_feature_bc_matrix,0.0782577246427536,0.0640589222311973,123,111,donor_level_pair,0.0141988024115563,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+pseudotime,GSM5098752_HM22_filtered_feature_bc_matrix,0.1136384755373001,0.1487749814987182,74,13,donor_level_pair,-0.03513650596141811,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+da_fap_score,339C,-0.4842836712066974,-0.1729688112114649,58,1329,donor_level_pair,-0.3113148599952325,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+da_fap_score,343B,-0.0454085208153515,-0.2132866042659402,15,1402,donor_level_pair,0.1678780834505887,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+da_fap_score,362C,-0.1468188942281743,-0.1387453125916845,197,4263,donor_level_pair,-0.008073581636489802,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+da_fap_score,367C,-0.0549011599137511,-0.3001044915581338,34,834,donor_level_pair,0.24520333164438268,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+da_fap_score,411C,0.1404455818113519,-0.0915394823039333,69,915,donor_level_pair,0.2319850641152852,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+da_fap_score,464C,0.1211151734582132,-0.0524720585965822,138,582,donor_level_pair,0.1735872320547954,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+da_fap_score,470BR,0.9611209617579703,-0.4574893822333463,51,2460,donor_level_pair,1.4186103439913167,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+da_fap_score,582C,0.1132366561835297,0.0015439490030481,1076,58,donor_level_pair,0.11169270718048159,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+da_fap_score,583B,-0.2573960878698279,-0.4957050356928119,18,3629,donor_level_pair,0.23830894782298395,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+da_fap_score,591C,-0.409358628327649,-0.2947421737487663,74,1238,donor_level_pair,-0.1146164545788827,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+da_fap_score,640C,0.0128377864832435,-0.3259311247468047,19,422,donor_level_pair,0.3387689112300482,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+da_fap_score,GSE143704,0.7969268283808539,0.0298585470368149,3790,6006,donor_level_pair,0.767068281344039,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+da_fap_score,GSM3746212_Muscle_1,0.2959630020534065,0.0531660309738706,42,70,donor_level_pair,0.24279697107953588,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+da_fap_score,GSM3746213_Muscle_2,0.1579114469503629,-0.0967315289063106,66,217,donor_level_pair,0.2546429758566735,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+da_fap_score,GSM3746214_Muscle_3,0.3246921947137423,0.3570641629176656,36,22,donor_level_pair,-0.032371968203923296,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+da_fap_score,GSM3746215_Muscle_4,0.5007639780196828,0.1784234371915606,58,46,donor_level_pair,0.32234054082812214,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+da_fap_score,GSM5098751_HM21_filtered_feature_bc_matrix,0.0553341226852114,0.1137178294393252,123,111,donor_level_pair,-0.05838370675411379,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.
+da_fap_score,GSM5098752_HM22_filtered_feature_bc_matrix,-0.2271550356540321,-0.5185806826173857,74,13,donor_level_pair,0.29142564696335355,,,,Donor/sample-level paired median comparing DA-FAP and non-DA-FAP cells.

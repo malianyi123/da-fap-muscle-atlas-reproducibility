@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+data/raw/
+results/objects/
+*.h5ad
+*.loom
+*.rds
+*.tar
+*.tar.gz
+!release_packages/da_fap_python_scripts_package.tar.gz
+!release_packages/da_fap_figures_tables_package.tar.gz
+.deploy_key*

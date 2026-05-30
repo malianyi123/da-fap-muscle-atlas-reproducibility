@@ -1,0 +1,5 @@
+module,n_genes,n_present,present_genes
+homeostatic,6,6,PDGFRA;PI16;DPP4;CXCL12;DCN;LUM
+adipogenic,7,5,PPARG;CEBPA;FABP4;LPL;CD36
+fibrotic_ecm,9,9,COL1A1;COL3A1;COL6A1;FN1;POSTN;TNC;THBS2;LOX;ACTA2
+inflammatory_remodeling,10,10,IL6;CCL2;CXCL12;CXCL14;ICAM1;VCAM1;SPP1;MMP2;MMP14;TIMP1

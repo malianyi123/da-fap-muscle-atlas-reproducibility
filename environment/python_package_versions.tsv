@@ -1,0 +1,16 @@
+package	version
+python	3.11.2
+anndata	0.12.16
+scanpy	1.11.5
+scvi-tools	not installed
+scvelo	not installed
+squidpy	not installed
+celloracle	not installed
+decoupler	not installed
+gseapy	not installed
+pandas	2.3.3
+numpy	2.4.6
+scipy	1.17.1
+matplotlib	3.10.9
+seaborn	0.13.2
+scikit-learn	1.8.0

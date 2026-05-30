@@ -1,0 +1,3 @@
+integration_representation,n_clusters,adjusted_rand_vs_phase4_subtypes,da_fap_fraction,da_fap_jaccard_vs_phase4
+X_pca,26,0.6251328945966557,0.23133211375353402,0.598500675924788
+X_pca_harmony,24,0.7673636402651921,0.16767004822883752,0.792373566004201

@@ -1,0 +1,9 @@
+rank_among_core_candidates,regulator,predicted_delta_da_fap_program,predicted_delta_adipogenic,predicted_delta_fibrotic_ecm,predicted_delta_inflammatory_remodeling,perturbation_sensitivity_score,interpretation
+1,FOS,-0.0289616240590306,-0.003702376495975,-0.0197981468546596,-0.063384348826457,0.0289616240590306,negative delta indicates predicted attenuation; computational prediction only
+2,KLF4,-0.0133174956698522,-9.007148015338032e-06,-0.0347831094776441,-0.0051603703838972,0.0133174956698522,negative delta indicates predicted attenuation; computational prediction only
+3,STAT3,-0.0090878131875871,-0.0034262661085025,0.003708519646619,-0.0275456931008779,0.0090878131875871,negative delta indicates predicted attenuation; computational prediction only
+4,CEBPA,-0.0090018054665836,-0.0208935633295629,0.0003209671054953,-0.0064328201756832,0.0090018054665836,negative delta indicates predicted attenuation; computational prediction only
+5,PPARG,-0.0060595307408909,-0.0168113466743169,0.0003605042465201,-0.0017277497948759,0.0060595307408909,negative delta indicates predicted attenuation; computational prediction only
+6,SMAD3,-0.0031652166629136,0.0011484279165767,-0.0195713961714784,0.0089273182661608,0.0031652166629136,negative delta indicates predicted attenuation; computational prediction only
+7,KLF5,-0.0021225721430984,-0.0022999951247319,3.334923198505403e-05,-0.0041010705365484,0.0021225721430984,negative delta indicates predicted attenuation; computational prediction only
+8,JUN,0.0098020083478323,-0.0096616512402687,-0.0065285524683801,0.0455962287521459,-0.0098020083478323,negative delta indicates predicted attenuation; computational prediction only

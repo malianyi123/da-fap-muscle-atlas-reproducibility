@@ -1,0 +1,8 @@
+feature,feature_type,n_present_genes,spearman_rho_with_da_fap_score,pvalue
+n_genes_by_counts,qc_covariate,,-0.14120555751642055,1.0798990116542855e-133
+total_counts,qc_covariate,,0.28958073649779625,0.0
+pct_counts_mt,qc_covariate,,0.294778868894818,0.0
+stress_response,artifact_module,9.0,-0.1116315686978575,5.6530037134835945e-84
+cell_cycle,artifact_module,1.0,-0.05566624400354281,4.493413261385655e-22
+apoptosis,artifact_module,3.0,0.07335005148561673,3.77918921876467e-37
+mitochondrial_gene_module,artifact_module,8.0,0.20700553614431214,2.74618443170597e-288

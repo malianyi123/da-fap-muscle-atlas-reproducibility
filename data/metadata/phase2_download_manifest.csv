@@ -1,0 +1,9 @@
+dataset_id,source,source_dataset_title,file_name,url,local_path,status
+CELLxGENE_E-MTAB-13874_human_ageing,CELLxGENE,Immune Cells,immune_cells.h5ad,https://datasets.cellxgene.cziscience.com/c019d55b-c97d-4947-94ab-ccac54e13a8a.h5ad,data/raw/CELLxGENE_E-MTAB-13874_human_ageing/immune_cells.h5ad,downloaded
+CELLxGENE_E-MTAB-13874_human_ageing,CELLxGENE,Fibroblasts and Schwann cells,fibroblasts_and_schwann_cells.h5ad,https://datasets.cellxgene.cziscience.com/1ac2e31a-c530-4356-b63d-3860055ab34c.h5ad,data/raw/CELLxGENE_E-MTAB-13874_human_ageing/fibroblasts_and_schwann_cells.h5ad,downloaded
+GSE167186_snRNA,GEO,,GSE167186_RAW.tar,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE167nnn/GSE167186/suppl/GSE167186_RAW.tar,data/raw/GSE167186_snRNA/GSE167186_RAW.tar,downloaded
+GSE167186_snRNA,GEO,,GSE167186_SimplifiedMetadataSheet.xlsx,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE167nnn/GSE167186/suppl/GSE167186_SimplifiedMetadataSheet.xlsx,data/raw/GSE167186_snRNA/GSE167186_SimplifiedMetadataSheet.xlsx,downloaded
+GSE143704,GEO,,GSE143704_DeMicheli_HumanMuscleAtlas_metadata.txt.gz,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE143nnn/GSE143704/suppl/GSE143704_DeMicheli_HumanMuscleAtlas_metadata.txt.gz,data/raw/GSE143704/GSE143704_DeMicheli_HumanMuscleAtlas_metadata.txt.gz,downloaded
+GSE143704,GEO,,GSE143704_DeMicheli_HumanMuscleAtlas_rawdata.txt.gz,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE143nnn/GSE143704/suppl/GSE143704_DeMicheli_HumanMuscleAtlas_rawdata.txt.gz,data/raw/GSE143704/GSE143704_DeMicheli_HumanMuscleAtlas_rawdata.txt.gz,downloaded
+GSE130646,GEO,,GSE130646_RAW.tar,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE130nnn/GSE130646/suppl/GSE130646_RAW.tar,data/raw/GSE130646/GSE130646_RAW.tar,downloaded
+GSE138826,GEO,,GSE138826_expression_matrix.txt.gz,https://ftp.ncbi.nlm.nih.gov/geo/series/GSE138nnn/GSE138826/suppl/GSE138826_expression_matrix.txt.gz,data/raw/GSE138826/GSE138826_expression_matrix.txt.gz,downloaded

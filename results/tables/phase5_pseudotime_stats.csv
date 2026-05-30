@@ -1,0 +1,2 @@
+comparison,n_da_fap,n_other_fap,median_da_fap_pseudotime,median_other_pseudotime,mannwhitney_u,pvalue
+DA-FAP vs non-DA-FAP pseudotime,6052,24013,0.2945859134197235,0.280293345451355,71151213.0,0.012213230489961209

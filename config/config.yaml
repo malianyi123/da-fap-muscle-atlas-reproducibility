@@ -1,0 +1,223 @@
+project:
+  name: da_fap_atlas
+  title: "Computational perturbation-guided single-cell and spatial atlas reveals degeneration-associated fibro-adipogenic progenitor programs in skeletal muscle"
+  root: "."
+  phase: "0-15 + manuscript draft"
+
+paths:
+  data_raw: "data/raw"
+  data_processed: "data/processed"
+  metadata: "data/metadata"
+  figures: "results/figures"
+  tables: "results/tables"
+  logs: "results/logs"
+  objects: "results/objects"
+  manuscript: "manuscript"
+
+workflow:
+  primary_language: "python"
+  primary_single_cell_stack:
+    - scanpy
+    - anndata
+    - scvi-tools
+    - harmonypy
+    - scrublet
+    - scvelo
+    - squidpy
+    - celloracle
+    - decoupler
+    - gseapy
+  supplemental_r_stack:
+    - Seurat v5
+    - Harmony
+    - SingleR
+    - CellChat
+    - Monocle3
+    - GSVA
+    - limma
+    - DESeq2
+    - clusterProfiler
+    - ComplexHeatmap
+    - scTenifoldKnk
+  proceed_to_full_analysis: true
+
+phase1:
+  repositories:
+    - GEO
+    - SRA
+    - ArrayExpress
+    - CELLxGENE Discover
+    - Human Cell Atlas
+    - Single Cell Portal
+    - Zenodo
+    - Figshare
+  search_terms:
+    - "skeletal muscle single-cell RNA sequencing aging"
+    - "skeletal muscle single-nucleus RNA sequencing aging"
+    - "sarcopenia single-cell RNA-seq skeletal muscle"
+    - "muscle fibrosis single-cell RNA-seq"
+    - "muscle regeneration single-cell RNA-seq"
+    - "fibro-adipogenic progenitor single-cell RNA-seq muscle"
+    - "FAPs skeletal muscle single cell"
+    - "human skeletal muscle spatial transcriptomics aging"
+    - "skeletal muscle spatial transcriptomics injury regeneration"
+    - "muscle fibrosis spatial transcriptomics"
+    - "bulk RNA-seq skeletal muscle aging GEO"
+    - "bulk RNA-seq sarcopenia skeletal muscle"
+    - "bulk RNA-seq muscle fibrosis"
+    - "paraspinal muscle degeneration transcriptome"
+    - "intervertebral disc degeneration paraspinal muscle transcriptome"
+  metadata_seed: "data/metadata/manual_dataset_seed.csv"
+  metadata_output: "data/metadata/dataset_metadata.csv"
+  search_output: "data/metadata/ncbi_geo_search_results.csv"
+  summary_output: "data/metadata/dataset_inventory_summary.md"
+  minimum_required:
+    sc_or_sn: 1
+    bulk: 1
+    spatial_preferred: 1
+
+phase2:
+  download_manifest: "data/metadata/phase2_download_manifest.csv"
+  standardized_manifest: "data/metadata/phase2_standardized_single_cell_manifest.csv"
+  standard_objects_dir: "results/objects/phase2_standardized"
+  selected_single_cell_datasets:
+    - CELLxGENE_E-MTAB-13874_human_ageing
+    - GSE167186_snRNA
+    - GSE143704
+    - GSE130646
+    - GSE138826
+  cellxgene:
+    collection_id: "2d40e6a7-f2fd-49ba-9db9-6b97e4c6dad5"
+    max_h5ad_asset_bytes: 250000000
+    preferred_dataset_title: "Human muscle cells and nuclei"
+    supportive_dataset_titles:
+      - "Fibroblasts and Schwann cells"
+      - "Immune Cells"
+  geo_downloads:
+    GSE167186_snRNA:
+      base_url: "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE167nnn/GSE167186/suppl"
+      files:
+        - "GSE167186_RAW.tar"
+        - "GSE167186_SimplifiedMetadataSheet.xlsx"
+    GSE143704:
+      base_url: "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE143nnn/GSE143704/suppl"
+      files:
+        - "GSE143704_DeMicheli_HumanMuscleAtlas_metadata.txt.gz"
+        - "GSE143704_DeMicheli_HumanMuscleAtlas_rawdata.txt.gz"
+    GSE130646:
+      base_url: "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE130nnn/GSE130646/suppl"
+      files:
+        - "GSE130646_RAW.tar"
+    GSE138826:
+      base_url: "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE138nnn/GSE138826/suppl"
+      files:
+        - "GSE138826_expression_matrix.txt.gz"
+
+phase3:
+  integrated_object: "results/objects/phase3_human_integrated_initial.h5ad"
+  qc_summary_table: "results/tables/phase3_qc_summary.csv"
+  composition_table: "results/tables/phase3_cell_type_composition.csv"
+  marker_score_table: "results/tables/phase3_marker_score_summary.csv"
+  selected_species_for_integration: "Homo sapiens"
+  max_cells_per_dataset_for_integration: 60000
+  random_seed: 13
+  n_top_hvg: 3000
+  n_pcs: 50
+  qc_thresholds:
+    min_genes: 200
+    min_counts: 300
+    max_pct_mito: 25
+  annotation:
+    use_reference_labels_when_available: true
+
+phase4_8:
+  fap_object: "results/objects/phase4_fap_integrated.h5ad"
+  fap_metadata: "data/processed/phase4_fap_metadata.csv.gz"
+  max_fap_cells_per_dataset: 40000
+  random_seed: 13
+  n_top_hvg: 3000
+  n_pcs: 40
+  da_fap_quantile: 0.75
+  output_prefix: "phase4_8"
+
+phase9:
+  spatial_dataset_id: "GSE225766"
+  spatial_raw_dir: "data/raw/GSE225766"
+  spatial_object: "results/objects/phase9_spatial_gse225766_scores.h5ad"
+  spatial_summary_table: "results/tables/phase9_spatial_score_summary.csv"
+
+phase10:
+  bulk_raw_dir: "data/raw/bulk_validation"
+  bulk_processed_dir: "data/processed/bulk_validation"
+  bulk_results_table: "results/tables/phase10_bulk_validation_scores.csv"
+  selected_bulk_datasets:
+    - GSE164471
+
+gene_modules:
+  fap_stromal:
+    - PDGFRA
+    - DCN
+    - LUM
+    - COL1A1
+    - COL3A1
+    - PI16
+    - DPP4
+    - CXCL12
+  adipogenic:
+    - PPARG
+    - CEBPA
+    - FABP4
+    - LPL
+    - ADIPOQ
+    - PLIN1
+    - CD36
+  fibrotic_ecm:
+    - COL1A1
+    - COL3A1
+    - COL6A1
+    - FN1
+    - POSTN
+    - TNC
+    - THBS2
+    - LOX
+    - ACTA2
+  inflammatory_remodeling:
+    - IL6
+    - CCL2
+    - CXCL12
+    - CXCL14
+    - ICAM1
+    - VCAM1
+    - SPP1
+    - MMP2
+    - MMP14
+    - TIMP1
+  candidate_regulators:
+    - PPARG
+    - SMAD3
+    - STAT3
+    - CEBPA
+    - JUN
+    - FOS
+    - KLF4
+    - KLF5
+    - RUNX1
+    - RUNX2
+    - FOXO1
+    - FOXO3
+    - HIF1A
+    - TEAD1
+    - YAP1
+    - WWTR1
+
+language_guardrails:
+  causal_claims:
+    - "candidate regulator"
+    - "putative driver"
+    - "computationally predicted perturbation-sensitive node"
+    - "experimental validation will be required"
+  avoid_claims:
+    - "proves causality"
+    - "true knockout"
+    - "first ever"
+    - "validated in human spatial data unless human spatial data are available"

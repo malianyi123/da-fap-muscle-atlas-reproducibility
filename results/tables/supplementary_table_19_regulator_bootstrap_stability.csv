@@ -1,0 +1,23 @@
+record_type,metric,value,regulator,top5_selection_freq,top10_selection_freq,observed_rank,interpretation
+bootstrap_summary,n_bootstrap_iterations,300.0,,,,,Bootstrap/subsampling iterations used for regulator-ranking stability.
+bootstrap_summary,mean_top5_jaccard_vs_observed,0.98,,,,,Mean top-5 overlap between bootstrap and observed rankings.
+bootstrap_summary,mean_top10_jaccard_vs_observed,0.9,,,,,Mean top-10 overlap between bootstrap and observed rankings.
+bootstrap_summary,mean_spearman_rank_correlation_vs_observed,0.98,,,,,Mean Spearman rank correlation between bootstrap and observed rankings.
+model_concordance,ridge_surrogate_vs_extratrees_spearman,0.91,,,,,Rank concordance between ridge-regression surrogate and ExtraTrees GRN perturbation.
+model_concordance,ridge_surrogate_vs_extratrees_top5_jaccard,0.67,,,,,Top-5 overlap between ridge-regression surrogate and ExtraTrees GRN perturbation.
+regulator_selection_frequency,top5_and_top10_selection_frequency,,FOS,1.0,1.0,2,Frequency of selection in top-ranked bootstrap perturbation screens.
+regulator_selection_frequency,top5_and_top10_selection_frequency,,KLF4,1.0,1.0,3,Frequency of selection in top-ranked bootstrap perturbation screens.
+regulator_selection_frequency,top5_and_top10_selection_frequency,,RUNX1,1.0,1.0,1,Frequency of selection in top-ranked bootstrap perturbation screens.
+regulator_selection_frequency,top5_and_top10_selection_frequency,,HIF1A,1.0,1.0,4,Frequency of selection in top-ranked bootstrap perturbation screens.
+regulator_selection_frequency,top5_and_top10_selection_frequency,,WWTR1,0.9433333333333334,1.0,7,Frequency of selection in top-ranked bootstrap perturbation screens.
+regulator_selection_frequency,top5_and_top10_selection_frequency,,YAP1,0.0466666666666666,1.0,9,Frequency of selection in top-ranked bootstrap perturbation screens.
+regulator_selection_frequency,top5_and_top10_selection_frequency,,STAT3,0.01,1.0,5,Frequency of selection in top-ranked bootstrap perturbation screens.
+regulator_selection_frequency,top5_and_top10_selection_frequency,,PPARG,0.0,1.0,8,Frequency of selection in top-ranked bootstrap perturbation screens.
+regulator_selection_frequency,top5_and_top10_selection_frequency,,SMAD3,0.0,1.0,10,Frequency of selection in top-ranked bootstrap perturbation screens.
+regulator_selection_frequency,top5_and_top10_selection_frequency,,CEBPA,0.0,1.0,6,Frequency of selection in top-ranked bootstrap perturbation screens.
+regulator_selection_frequency,top5_and_top10_selection_frequency,,JUN,0.0,0.0,15,Frequency of selection in top-ranked bootstrap perturbation screens.
+regulator_selection_frequency,top5_and_top10_selection_frequency,,KLF5,0.0,0.0,13,Frequency of selection in top-ranked bootstrap perturbation screens.
+regulator_selection_frequency,top5_and_top10_selection_frequency,,RUNX2,0.0,0.0,11,Frequency of selection in top-ranked bootstrap perturbation screens.
+regulator_selection_frequency,top5_and_top10_selection_frequency,,FOXO1,0.0,0.0,14,Frequency of selection in top-ranked bootstrap perturbation screens.
+regulator_selection_frequency,top5_and_top10_selection_frequency,,FOXO3,0.0,0.0,16,Frequency of selection in top-ranked bootstrap perturbation screens.
+regulator_selection_frequency,top5_and_top10_selection_frequency,,TEAD1,0.0,0.0,12,Frequency of selection in top-ranked bootstrap perturbation screens.

@@ -1,0 +1,6 @@
+dataset_id,status,n_obs,n_vars,species,output_path,message
+CELLxGENE_E-MTAB-13874_human_ageing,written,40932,32375,Homo sapiens,results/objects/phase2_standardized/CELLxGENE_E-MTAB-13874_human_ageing.h5ad,existing object reused
+GSE167186_snRNA,written,134486,33538,Homo sapiens,results/objects/phase2_standardized/GSE167186_snRNA.h5ad,existing object reused
+GSE143704,written,22058,21703,Homo sapiens,results/objects/phase2_standardized/GSE143704.h5ad,existing object reused
+GSE130646,written,2876,15406,Homo sapiens,results/objects/phase2_standardized/GSE130646.h5ad,existing object reused
+GSE138826,missing,0,0,Mus musculus,,deferred: mouse text matrix requires separate sparse conversion and is excluded from human Phase 3 integration

@@ -1,0 +1,9 @@
+dataset_id,module,n_genes,n_present,present_genes
+GSE225766,DA_FAP,24,24,Pparg;Cebpa;Fabp4;Lpl;Cd36;Col1a1;Col3a1;Col6a1;Fn1;Postn;Tnc;Thbs2;Lox;Acta2;Il6;Ccl2;Cxcl12;Cxcl14;Icam1;Vcam1;Spp1;Mmp2;Mmp14;Timp1
+GSE225766,adipogenic,7,7,Pparg;Cebpa;Fabp4;Lpl;Adipoq;Plin1;Cd36
+GSE225766,fibrotic_ecm,9,9,Col1a1;Col3a1;Col6a1;Fn1;Postn;Tnc;Thbs2;Lox;Acta2
+GSE225766,inflammatory_remodeling,10,10,Il6;Ccl2;Cxcl12;Cxcl14;Icam1;Vcam1;Spp1;Mmp2;Mmp14;Timp1
+GSE225766,fap_stromal,8,8,Pdgfra;Dcn;Lum;Col1a1;Col3a1;Pi16;Dpp4;Cxcl12
+GSE225766,macrophage,7,7,Lyz2;Cd68;Adgre1;C1qa;C1qb;Apoe;Spp1
+GSE225766,atrophic_muscle,5,5,Fbxo32;Trim63;Foxo3;Mstn;Casp3
+GSE225766,myofiber,7,7,Acta1;Des;Myh1;Myh2;Myh4;Myh7;Tnnt3
