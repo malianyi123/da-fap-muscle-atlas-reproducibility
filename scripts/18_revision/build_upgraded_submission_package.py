@@ -297,8 +297,8 @@ def build_supplementary_methods_tables(paths: list[Path]) -> None:
     r = p.add_run("Supplementary Methods and Tables")
     set_font(r, 16, True)
     add_para(doc, TITLE)
-    add_para(doc, "Ma Chao")
-    add_para(doc, "Correspondence: guomachao23@gmail.com")
+    add_para(doc, "Author Name")
+    add_para(doc, "Correspondence: author@example.com")
 
     doc.add_paragraph("Supplementary methods", style="Heading 1")
     method_sections = [

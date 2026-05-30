@@ -284,7 +284,7 @@ def add_title_block(doc: Document) -> None:
     run._element.rPr.rFonts.set(qn("w:eastAsia"), "Times New Roman")
     run.font.size = Pt(16)
 
-    for text in ["Ma Chao", "Correspondence: guomachao23@gmail.com"]:
+    for text in ["Author Name", "Correspondence: author@example.com"]:
         p = doc.add_paragraph()
         p.alignment = WD_ALIGN_PARAGRAPH.CENTER
         p.paragraph_format.space_after = Pt(3)
@@ -393,7 +393,7 @@ def build_submission_manuscript() -> None:
         add_paragraph(doc, legend)
 
     doc.core_properties.title = TITLE
-    doc.core_properties.author = "Ma Chao"
+    doc.core_properties.author = "Author Name"
     doc.save(SUBMISSION_DOCX)
 
 
@@ -514,8 +514,8 @@ def build_supplementary_materials() -> None:
     title_run.font.size = Pt(16)
 
     add_paragraph(doc, TITLE)
-    add_paragraph(doc, "Ma Chao")
-    add_paragraph(doc, "Correspondence: guomachao23@gmail.com")
+    add_paragraph(doc, "Author Name")
+    add_paragraph(doc, "Correspondence: author@example.com")
 
     doc.add_paragraph("Supplementary methods", style="Heading 1")
     add_markdown_as_docx(doc, PROJECT_ROOT / "manuscript" / "supplementary_methods.md")
@@ -571,7 +571,7 @@ def build_supplementary_materials() -> None:
             add_dataframe_table(doc, df.loc[:, selected_columns].head(preview_rows))
 
     doc.core_properties.title = "Supplementary materials"
-    doc.core_properties.author = "Ma Chao"
+    doc.core_properties.author = "Author Name"
     doc.save(SUPPLEMENT_DOCX)
 
 

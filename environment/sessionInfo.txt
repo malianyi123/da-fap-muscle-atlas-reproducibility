@@ -7,7 +7,7 @@ Project phase: 0-1
 Observed local runtimes:
 - Python: 3.11.2
 - Rscript: R 4.5.3 (2026-03-11)
-- Conda: available at /Users/guomachao/opt/anaconda3/bin/conda
+- Conda: available in the local analysis environment
 
 The full computational environment is specified in environment/environment.yml.
 After creating and activating the environment, regenerate an executable package
@@ -15,4 +15,3 @@ record with:
 
   Rscript scripts/00_setup/write_session_info.R
   python3 scripts/00_setup/write_python_versions.py
-
